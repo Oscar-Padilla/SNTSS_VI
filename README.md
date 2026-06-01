@@ -19,7 +19,7 @@ cd SNTSS-VI
 ### 2. Instalar dependencias
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Ejecución
@@ -27,7 +27,7 @@ npm install
 ### Modo desarrollo (con recarga automática)
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Abre tu navegador en `http://localhost:5173`
@@ -35,7 +35,7 @@ Abre tu navegador en `http://localhost:5173`
 ### Construir para producción
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Los archivos de salida se generan en la carpeta `dist/`.
@@ -43,7 +43,7 @@ Los archivos de salida se generan en la carpeta `dist/`.
 ### Previsualizar build de producción
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 ## Tecnologías
