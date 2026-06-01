@@ -416,28 +416,8 @@ table.data tr:hover td { background: var(--purple-50); }
 .role-switch button.on { background: #fff; color: var(--purple); box-shadow: var(--shadow-sm); }
 
 /* ============================================================
-   Mobile-frame
+   Layout base
    ============================================================ */
-.viewport-host { min-height: 100vh; }
-.viewport-host.is-mobile { background: #ECE7EE; padding: 24px 0; display: flex; justify-content: center; }
-.viewport-host.is-mobile .device {
-  width: 412px; max-width: calc(100vw - 24px); height: 860px; max-height: calc(100vh - 48px);
-  background: #fff; border-radius: 44px; border: 11px solid #1b1320; box-shadow: var(--shadow-lg);
-  overflow: hidden; position: relative;
-}
-.viewport-host.is-mobile .device .scroll { width: 100%; height: 100%; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
-.viewport-host.is-mobile .device .notch { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 140px; height: 26px; background: #1b1320; border-radius: 0 0 16px 16px; z-index: 200; }
-
-/* En móvil forzamos columnas */
-.is-mobile .hero-grid, .is-mobile .feature-grid, .is-mobile .events-grid,
-.is-mobile .news-grid, .is-mobile .team-grid, .is-mobile .footer-grid,
-.is-mobile .kpi-grid, .is-mobile .auth-wrap, .is-mobile .lead-card,
-.is-mobile .admin, .is-mobile .two-col { grid-template-columns: 1fr !important; }
-.is-mobile .nav-links { display: none; }
-.is-mobile .burger { display: flex; }
-.is-mobile .admin-side { display: none; }
-.is-mobile .auth-art { display: none; }
-.is-mobile .hide-mobile { display: none !important; }
 
 /* Misc helpers */
 .two-col { display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; align-items: start; }

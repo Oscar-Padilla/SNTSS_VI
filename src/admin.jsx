@@ -47,7 +47,7 @@ export function PageAcceso({ go, toast }) {
   );
 }
 
-export function AdminApp({ go, toast, isMobile }) {
+export function AdminApp({ go, toast }) {
   const [tab, setTab] = useState("resumen");
   const nav = [
     ["resumen", "Resumen", "home"],
@@ -77,15 +77,7 @@ export function AdminApp({ go, toast, isMobile }) {
       </aside>
 
       <main className="admin-main">
-        {isMobile && (
-          <div className="row gap-8 wrap" style={{ marginBottom: 18 }}>
-            {nav.map(([id, l, ic]) => (
-              <button key={id} className={"btn btn-sm " + (tab === id ? "btn-primary" : "btn-outline")} onClick={() => setTab(id)}>
-                <Icon name={ic} size={15} /> {l}
-              </button>
-            ))}
-          </div>
-        )}
+
         <div className="admin-topbar">
           <div>
             <p className="small" style={{ color: "var(--purple)", fontWeight: 700 }}>Igualdad Sustantiva · Romy Casanova</p>
