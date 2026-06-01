@@ -50,7 +50,7 @@ export function PageNosotros({ go }) {
               <div className="card" style={{ overflow: "hidden" }}>
                 <img src="/assets/about-1.jpg" alt="Asamblea SNTSS" style={{ aspectRatio: "4/3", objectFit: "cover", width: "100%" }} />
               </div>
-              <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="form-2col">
                 <div className="tint-box center"><b className="h2" style={{ color: "var(--purple)" }}>{D.org.afiliados}</b><p className="small">Agremiados representados</p></div>
                 <div className="tint-box center"><b className="h2" style={{ color: "var(--purple)" }}>{D.org.delegaciones}</b><p className="small">Delegaciones</p></div>
               </div>
@@ -213,7 +213,7 @@ export function PageContacto({ go, toast }) {
                 </div>
               ) : (
                 <form onSubmit={(e) => { e.preventDefault(); setSent(true); toast && toast("Mensaje enviado correctamente"); }}>
-                  <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                  <div className="form-2col">
                     <div className="field"><label>Nombre <span className="req">*</span></label><input className="input" required placeholder="Tu nombre" /></div>
                     <div className="field"><label>Matrícula</label><input className="input" placeholder="Opcional" /></div>
                   </div>

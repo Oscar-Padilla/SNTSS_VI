@@ -39,7 +39,7 @@ export function MemberFlow({ go, params, toast }) {
             <div className="card card-pad">
               <h3 className="h3" style={{ marginBottom: 6 }}>Identifícate</h3>
               <p style={{ color: "var(--ink-soft)", marginBottom: 22 }}>Validamos tus datos contra el padrón sindical. Solo lo hacemos una vez.</p>
-              <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="form-2col">
                 <div className="field"><label>Matrícula IMSS <span className="req">*</span></label><input className="input" defaultValue={W.matricula} /></div>
                 <div className="field"><label>CURP <span className="req">*</span></label><input className="input" defaultValue={W.curp} /></div>
               </div>
@@ -66,7 +66,7 @@ export function MemberFlow({ go, params, toast }) {
                 <img src={W.img} alt={W.nombre} style={{ width: 72, height: 72, borderRadius: 18, objectFit: "cover", boxShadow: "var(--shadow-sm)" }} />
                 <div><b className="h3">{W.nombre}</b><p style={{ color: "var(--ink-soft)" }}>{W.adscripcion}</p></div>
               </div>
-              <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="form-2col">
                 {[["Matrícula", W.matricula], ["Categoría", W.categoria], ["Adscripción", W.adscripcion], ["Antigüedad", W.antiguedad]].map(([k, v]) => (
                   <div className="field" key={k} style={{ marginBottom: 0 }}>
                     <label>{k}</label>

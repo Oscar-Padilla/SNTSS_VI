@@ -71,7 +71,7 @@ export function AdminApp({ go, toast }) {
             <Icon name={ic} size={19} /> {l}
           </a>
         ))}
-        <div style={{ marginTop: "auto", paddingTop: 14, borderTop: "1px solid rgba(255,255,255,.1)" }}>
+        <div className="admin-side-footer">
           <a href="#" className="admin-nav" onClick={(e) => { e.preventDefault(); go("inicio"); }}><Icon name="logout" size={19} /> Salir del panel</a>
         </div>
       </aside>
@@ -219,11 +219,11 @@ function AdminCrear({ setTab, toast }) {
       <div className="card card-pad">
         <form onSubmit={(e) => { e.preventDefault(); toast && toast("Convocatoria publicada"); setTab("convocatorias"); }}>
           <div className="field"><label>Nombre del evento <span className="req">*</span></label><input className="input" placeholder="Ej. Festejo Día del Padre 2026" required /></div>
-          <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="form-2col">
             <div className="field"><label>Secretaría</label><input className="input" value="Igualdad Sustantiva" readOnly style={{ background: "var(--canvas)" }} /></div>
             <div className="field"><label>Cupo máximo <span className="req">*</span></label><input className="input" type="number" placeholder="800" required /></div>
           </div>
-          <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="form-2col">
             <div className="field"><label>Fecha del evento <span className="req">*</span></label><input className="input" type="date" required /></div>
             <div className="field"><label>Cierre de inscripciones</label><input className="input" type="date" /></div>
           </div>
@@ -293,7 +293,7 @@ function AdminInscritos({ toast }) {
 
   return (
     <div className="stack gap-16">
-      <div className="grid kpi-grid" style={{ gridTemplateColumns: "repeat(3,1fr)" }}>
+      <div className="kpi-3">
         <div className="card kpi"><div className="ico" style={{ background: "var(--purple-50)", color: "var(--purple)" }}><Icon name="users" size={22} /></div><b>{rows.length}</b><span>Inscritos mostrados</span></div>
         <div className="card kpi"><div className="ico" style={{ background: "var(--ok-bg)", color: "var(--ok-fg)" }}><Icon name="check" size={22} /></div><b>{asistieron}</b><span>Asistencia registrada</span></div>
         <div className="card kpi"><div className="ico" style={{ background: "var(--warn-bg)", color: "var(--warn-fg)" }}><Icon name="doc" size={22} /></div><b>{rows.filter((r) => r.estado !== "Validado").length}</b><span>Documentos por revisar</span></div>

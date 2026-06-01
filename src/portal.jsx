@@ -82,7 +82,7 @@ export function PageInicio({ go }) {
         <div className="container">
           <SecHead eyebrow="Secretarías" title="Cada área, con su propio espacio"
             sub="Las secretarías alimentan y administran sus convocatorias de forma independiente." />
-          <div className="grid" style={{ gridTemplateColumns: "repeat(2,1fr)" }}>
+          <div className="sec-2col">
             {D.secretarias.map((s) => (
               <div className="card card-pad card-hover row gap-16" key={s.id} style={{ alignItems: "flex-start" }}>
                 <div className="ico ico-lg" style={{ width: 54, height: 54, borderRadius: 15, display: "grid", placeItems: "center", background: "var(--purple-50)", color: s.color, flexShrink: 0 }}>
@@ -187,7 +187,7 @@ export function NewsGrid({ go, limit }) {
         </div>
       </div>
       <div className="stack gap-24" style={{ gridColumn: "span 2" }}>
-        <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+        <div className="news-inner">
           {rest.map((n) => (
             <div className="card news-card card-hover" key={n.id} onClick={() => go("nota", { id: n.id })} style={{ cursor: "pointer" }}>
               <div className="cover"><img src={n.img} alt={n.titulo} /></div>
