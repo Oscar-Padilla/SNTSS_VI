@@ -1,25 +1,52 @@
-# CODING AGENTS: READ THIS FIRST
+# SNTSS Sección VI — Portal Web
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+Portal oficial del Sindicato Nacional de Trabajadores de la Secretaría de Salud, Sección VI Yucatán.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+## Requisitos previos
 
-## What you should do — IMPORTANT
+- [Node.js](https://nodejs.org/) v18 o superior
+- [Git](https://git-scm.com/)
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+## Instalación
 
-**Find the primary design file under `project/` and read it top to bottom.** The chat transcripts will tell you which file the user was last iterating on. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+### 1. Clonar el repositorio
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+```bash
+git clone https://github.com/tu-usuario/SNTSS-VI.git
+cd SNTSS-VI
+```
 
-## About the design files
+### 2. Instalar dependencias
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+```bash
+npm install
+```
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Ejecución
 
-## Bundle contents
+### Modo desarrollo (con recarga automática)
 
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `SNTSS VI YUCATAN` project files (HTML prototypes, assets, components)
+```bash
+npm run dev
+```
+
+Abre tu navegador en `http://localhost:5173`
+
+### Construir para producción
+
+```bash
+npm run build
+```
+
+Los archivos de salida se generan en la carpeta `dist/`.
+
+### Previsualizar build de producción
+
+```bash
+npm run preview
+```
+
+## Tecnologías
+
+- [React 18](https://react.dev/)
+- [Vite 5](https://vitejs.dev/)
