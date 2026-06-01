@@ -48,7 +48,7 @@ export function PageNosotros({ go }) {
             </div>
             <div className="stack gap-16">
               <div className="card" style={{ overflow: "hidden" }}>
-                <img src="https://picsum.photos/seed/sntss-a1/800/600" alt="Asamblea SNTSS" style={{ aspectRatio: "4/3", objectFit: "cover", width: "100%" }} />
+                <img src="/assets/about-1.jpg" alt="Asamblea SNTSS" style={{ aspectRatio: "4/3", objectFit: "cover", width: "100%" }} />
               </div>
               <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <div className="tint-box center"><b className="h2" style={{ color: "var(--purple)" }}>{D.org.afiliados}</b><p className="small">Agremiados representados</p></div>

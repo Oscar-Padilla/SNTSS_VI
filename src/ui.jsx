@@ -4,7 +4,7 @@ import { Icon } from './icons.jsx'
 export function Brand({ go, light }) {
   return (
     <a className="brand" href="#" onClick={(e) => { e.preventDefault(); go && go("inicio"); }}>
-      <img src="/logo.svg" alt="SNTSS Sección VI" />
+      <img src="/assets/logo.png" alt="SNTSS Sección VI" />
       <span className="brand-txt">
         <b>SNTSS Sección VI</b>
         <span>Yucatán</span>

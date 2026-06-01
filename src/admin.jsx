@@ -61,7 +61,7 @@ export function AdminApp({ go, toast, isMobile }) {
     <div className="admin">
       <aside className="admin-side">
         <div className="admin-brand">
-          <img src="/logo.svg" alt="" />
+          <img src="/assets/logo.png" alt="" />
           <div><b>Igualdad Sustantiva</b><span>Panel · Sección VI</span></div>
         </div>
         {nav.map(([id, l, ic]) => (
@@ -270,7 +270,7 @@ function AdminCrear({ setTab, toast }) {
           <p className="small" style={{ color: "var(--ink-soft)" }}>Así verán tu convocatoria los trabajadores en el portal. Tú la administras sin depender de nadie.</p>
         </div>
         <div className="card" style={{ overflow: "hidden" }}>
-          <div style={{ aspectRatio: "16/9", background: foto ? `url(https://picsum.photos/seed/sntss-e1/800/450) center/cover` : "repeating-linear-gradient(45deg,var(--canvas-2),var(--canvas-2) 12px,#fff 12px,#fff 24px)" }} />
+          <div style={{ aspectRatio: "16/9", background: foto ? `url(/assets/news-5.jpg) center/cover` : "repeating-linear-gradient(45deg,var(--canvas-2),var(--canvas-2) 12px,#fff 12px,#fff 24px)" }} />
           <div className="card-pad">
             <Pill type="rose" icon="heart">Inscripciones abiertas</Pill>
             <h3 className="h3" style={{ margin: "10px 0 6px" }}>Tu nuevo evento</h3>

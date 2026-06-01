@@ -37,7 +37,7 @@ export function PageInicio({ go }) {
             <div className="hero-visual">
               <span className="hero-blob" style={{ width: 360, height: 360, top: -20, right: -30 }} />
               <div className="hero-card">
-                <img className="photo" src="https://picsum.photos/seed/sntss-a2/800/600" alt="Trabajadores SNTSS" />
+                <img className="photo" src="/assets/about-2.jpg" alt="Trabajadores SNTSS" />
               </div>
               <div className="float-chip" style={{ top: 24, left: -24 }}>
                 <span className="ico" style={{ background: "var(--rose)" }}><Icon name="heart" size={18} /></span>

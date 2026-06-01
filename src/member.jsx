@@ -163,7 +163,7 @@ export function CredentialCard({ W }) {
   return (
     <div className="credential">
       <div className="top">
-        <img className="logo" src="/logo.svg" alt="" />
+        <img className="logo" src="/assets/logo.png" alt="" />
         <div className="t"><b>SNTSS Sección VI</b><span>Credencial digital · Yucatán</span></div>
       </div>
       <img className="pp" src={W.img} alt={W.nombre} />
